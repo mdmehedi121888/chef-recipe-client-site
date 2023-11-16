@@ -1,0 +1,11 @@
+#blog a.active {
+  color: red;
+}
+
+#home a.active {
+  color: red;
+}
+
+#login a.active {
+  color: red;
+}
