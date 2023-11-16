@@ -22,7 +22,8 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("http://localhost:3000/chefs"),
+        loader: () =>
+          fetch("https://chef-recipe-server-site-sigma.vercel.app/chefs"),
       },
       {
         path: "/login",
@@ -44,7 +45,9 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/chef/${params.id}`),
+          fetch(
+            `https://chef-recipe-server-site-sigma.vercel.app/chef/${params.id}`
+          ),
       },
     ],
   },
